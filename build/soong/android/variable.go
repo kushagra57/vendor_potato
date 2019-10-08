@@ -11,6 +11,9 @@ type Product_variables struct {
 		Header_libs []string
 		Shared_libs []string
 	}
+	Target_init_vendor_lib struct {
+		Whole_static_libs []string
+	}
 	Device_support_hwfde_perf struct {
 		Cflags []string
 	}
@@ -43,6 +46,7 @@ type ProductVariables struct {
 	Device_support_wait_for_qsee  *bool `json:",omitempty"`
 	Java_Source_Overlays *string `json:",omitempty"`
 	Needs_text_relocations  *bool `json:",omitempty"`
+	Target_init_vendor_lib  *string `json:",omitempty"`
 	Specific_camera_parameter_library  *string `json:",omitempty"`
 	Target_process_sdk_version_override *string `json:",omitempty"`
 	Target_shim_libs  *string `json:",omitempty"`
